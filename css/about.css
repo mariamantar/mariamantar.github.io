@@ -1,0 +1,55 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+
+ .wrap {
+   margin: 0 auto;
+   max-width: 1140px;
+   text-align: center;
+   /*padding: 10px;*/
+ }
+
+
+
+ p {
+   margin-top: 10%;
+   margin-bottom: 20px;
+   text-align: left;
+   font-family: "Josefin Sans", sans-serif;
+   font-size: 26px;
+   line-height: 50px;
+ }
+
+
+
+/* burger icon start */
+
+.burger-container {
+  position: absolute;
+  width: 100%;
+  height: 99%;
+}
+
+
+.melting-cheese {
+  position: relative;
+  fill: #f6e7b5;
+}
+
+/* Burger icon end */
+
+
+
+
+
+/*#site-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #fff;
+  text-align: center;
+}*/

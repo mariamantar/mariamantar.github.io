@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>blog</title>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="css/blog.css">
+<nav>
+  <div class="centre">
+    <h4>Blog</h4>
+    <ul class="clearfix">
+
+      <li>
+        <h3>
+          <a href="#">Books for beginner programmers</a>
+        </h3>
+        <div class="date">4 days ago</div>
+      </li>
+
+      <li>
+        <h3>
+          <a href="#">Styling your website with css</a>
+        </h3>
+        <div class="date">1 week ago</div>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+<article>
+  <h2>Books for beginner programmers</h2>
+
+  <p>These are two books written by the same author "Jon Duckett" that i would recommend to anyone interested in learning to how build websites and code. They are suitable for someone who enjoys more detailed visuals rather than a full textbook with no images showing you how to write out the code. These two books will help you understand how the web works and give you a deep understanding of HTML/CSS and JAVASCRIPT/JQUERY . If you know how to code proficiently with one language/framework, it makes it easier to learn any other language. These are probably the most popular books for every beginner because they are very easy to use and study with.</p>
+
+	<img src="http://mariamantar.com/wp-content/uploads/2018/04/html-css-239x300.jpg" alt=""><p> The books are very straightforward and the layout and design is easy to understand. They are set out in a way that allows you to get right into it and start programming. The concepts and elements are explained very well and really focuses on the fundamentals.</p>
+
+<img src="http://mariamantar.com/wp-content/uploads/2018/04/javascript-and-jquery-book-cover-241x300.png" alt=""><p>Both books are also good references and contain "how to" examples. Because it is visually appealing, it will make you excited to learn. This one focuses more on development where as HTML/CSS is design focused.</p>
+
+
+  <p class="post-end clearfix">4 days ago<span>L. Boltzmann</span></p>
+</article>
+
+<article>
+  <h2>Styling your website with css</h2>
+
+
+
+  <p>So yesterday i was editing my website attempting to create a clean and minimalist style when i ran into some trouble with the sizing of my header text, footer social media icons and spacing in between my header image and header text. Frustrated in my attempt to fix it i decided to alter it manually via additional CSS (Cascading Style Sheets) which is basically the styling (colour, size , font etc.) of how HTML elements are going to be displayed on the screen. You can access CSS on word press by going to Appearance > customise > additional CSS. Below is some code that i typed into additional CSS to adjust some elements on my homepage.</p>
+
+<p>Removing the credits from the bottom of a theme:
+<br>  .footer-copyright .credit { display: none; }
+<br>
+Editing the header text color, font and size
+<br> .logo .header-logo-text {
+font-family: Arial;
+font-size: 35px;
+}
+
+<br> Removing the spacing between the header image and text
+<br> @media (max-width: 767px){
+.header {
+padding-top: 0; }
+
+<br> Aligning footer widgets
+<br> .footer-widgets, .footer-widgets .widget-title { text-align: center; }
+
+<br> Increase size of social media icons
+<br> .widget .menu-social-container .menu li a::before { font: normal 17px/1 ‘FontAwesome’; }
+
+*Code may need to be adjusted depending on the theme that you choose
+Below is a link to a CSS cheat sheet that you can use for your website, have fun styling.
+https://adam-marsden.co.uk/css-cheat-sheet</p>
+
+  <p class="post-end clearfix">1 week ago<span>M. Planck</span></p>
+
+</article>
+</main>
+</body>
+</html>

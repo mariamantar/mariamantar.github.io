@@ -1,0 +1,77 @@
+/*nav-content*/
+.navbar-default {
+  background: #ffffff;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #000000;
+  background: #ffffff;
+  font-family: helvetica;
+  text-align: center;
+  font-weight: 100;
+}
+
+
+.navbar-default .navbar-brand {
+  color: #000000;
+  font-family: helvetica;
+  text-align: center;
+  font-weight: 100;
+}
+
+/*nav*/
+
+.logo-pic{
+  width:120px;
+  height: auto;
+}
+.navbar-default{
+  height: 90px;
+}
+.navbar-right{
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+
+.apple {
+margin-top: 10%;
+    width: 30%;
+    margin-left: 10%
+}
+
+
+.social-icons {
+  margin: 0;
+  padding: 0;
+  background: #0606e2;
+
+}
+
+ul {
+  display: flex;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  right: 35%;
+ }
+
+ul li {
+  list-style: none;
+}
+ul li a {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  color: #0606e2;
+  text-align: center;
+  font-size: 35px;
+  margin: 0 10px;
+
+}
+
+ul li a .fa {
+  color: #0606e2;
+}

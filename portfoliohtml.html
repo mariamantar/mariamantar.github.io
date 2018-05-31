@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+  <html>
+  <head >
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta charset="utf-8">
+     <!-- <meta name="viewport" content="width = 1050, user-scalable = no" /> -->
+     <script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
+     <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
+     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <title>Mariam Antar | Official Site</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+     <link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/double-page.css">
+  </head>
+  <body id="body1">
+  <nav class="navbar navbar-default navbar-fixed-top" >
+  <div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+     </button>
+    <a href="#" class="navbar-brand navbar-left">Mariam Antar</a>
+  </div>
+  <div class="collapse navbar-collapse" id="bs-nav-demo">
+  <div class="nav navbar-nav navbar-right">
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </div>
+    </div>
+    <!-- </div>
+    </div> -->
+  </nav>
+    <script type="text/javascript"   src="https://code.jquery.com/jquery-2.1.4.js"></script>
+      <script type="text/javascript" src="https://maxcdn.bootstrap.cdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-12">
+  <div id="header">
+    <img id="image" src="https://i.pinimg.com/originals/28/0f/bb/280fbb80a53ae7af9b9b8faf6b8fac28.jpg" alt="A image" >
+      <h1> Developer / <br> Designer </h1>
+    <p>I am text block. Click edit button to change this text. <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Ut elit tellus, luctus nec ullamcorper mattis, pulvinar <br> dapibus leo. I am text block. Click edit button to change <br> this text. Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Ut elit tellus, luctus nec ullamcorper <br> mattis, pulvinar dapibus leo. <br> </p>
+  </div>
+  </div>
+  </div>
+  </div>
+
+<div class="secondbody" id="boxborder">
+<div class="secondbody" id="boxborder2"></div>
+</div>
+<div class="secondbody">
+  <p>CLICK THE TOP OF <br> THE PAGE TO READ ME</p>
+</div>
+<div class="secondbody">
+    <!-- flip code -->
+    <div class="flipbook-viewport">
+    <div class="container">
+    <div class="flipbook">
+    <div class="page" style="background-image:url(pages/1.jpg)"></div>
+    <div class="double" style="background-image:url(pages/2.jpg)"></div>
+    <div class="double" style="background-image:url(pages/3.jpg)"></div>
+    <div class="double" style="background-image:url(pages/4.jpg)"></div>
+    <div class="double" style="background-image:url(pages/5.jpg)"></div>
+    <div class="double" style="background-image:url(pages/6.jpg)"></div>
+    <div class="page" style="background-image:url(pages/7.jpg)"></div>
+    </div>
+    </div>
+    </div>
+</div>
+    <script type="text/javascript">
+
+     function loadApp() {
+
+      var flipbook = $('.flipbook');
+
+        // Check if the CSS was already loaded
+    if (flipbook.width()==0 || flipbook.height()==0) {
+      setTimeout(loadApp, 10);
+      return;
+      }
+    $('.flipbook .double').scissor();
+
+      // Create the flipbook
+    $('.flipbook').turn({
+      // Elevation
+      elevation: 50,
+      // Enable gradients
+      gradients: true,
+      // Auto center this flipbook
+      autoCenter: true
+      });
+      }
+
+      // Load the HTML4 version if there's not CSS transform
+
+      yepnope({
+      test : Modernizr.csstransforms,
+      yep: ['lib/turn.min.js'],
+      nope: ['lib/turn.html4.min.js'],
+      both: ['lib/scissor.min.js'],
+      complete: loadApp
+      });
+
+      </script>
+
+      <div class="thirdbody">
+      <!-- start of the footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="social-icons">
+<ul>
+  <li><a><i class="fab fa-twitter-square"></i></a></li>
+  <li><a><i class="fab fa-github-square"></i></a></li>
+  <li><a><i class="fab fa-linkedin"></i></a></li>
+  <li><a><i class="fab fa-reddit-square"></i></a></li>
+</ul>
+    </div>
+  <div class= "bottom-footer"> © Copyright 2018 Mariam Antar
+  </div>
+    </div>
+  </footer>
+      <!-- end of the footer -->
+      </div>
+
+    </body>
+    </html>

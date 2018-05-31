@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contact</title>
+	<meta charset="utf-8">
+
+  <!-- this is flip links -->
+  <script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
+  <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
+  <!-- <link rel="stylesheet" href="css/double-page.css"> -->
+
+  <!-- this is bootstrap link for the navigation bar-->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+       </button>
+        <a href="index.html" class="navbar-brand navbar-left"><img class="logo-pic" src="logo.png" alt=""></a>
+
+      </div>
+      <div class="collapse navbar-collapse" id="bs-nav-demo">
+        <div class="nav navbar-nav navbar-right">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </div>
+      </div>
+  </nav>
+	<!-- end of nav -->
+	<div class="container">
+	  <div class="row">
+	      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+	        <h2>Contact</h2>
+	      </div>
+	  </div>
+		<p>Contact me at mariam.antar@hotmail.com</p>
+	  <div class="row">
+	      <!-- <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3"> -->
+				<!-- <div class="form-center"> -->
+	          <form id="contact-form" class="form" action="#" method="POST" role="form">
+	              <div class="form-group">
+	                  <label class="form-label" for="name">Your Name</label>
+	                  <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1" required>
+	              </div>
+	              <div class="form-group">
+	                  <label class="form-label" for="email">Your Email</label>
+	                  <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" required>
+	              </div>
+	              <div class="form-group">
+	                  <label class="form-label" for="subject">Subject</label>
+	                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3">
+	              </div>
+	              <div class="form-group">
+	                  <label class="form-label" for="message">Message</label>
+	                  <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required></textarea>
+	              </div>
+	              <div class="text-center">
+	                  <button type="submit" class="btn btn-start-order">Send Message</button>
+	              </div>
+	          </form>
+	      <!-- </div> -->
+	  </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+// Test for placeholder support
+	$.support.placeholder = (function(){
+			var i = document.createElement('input');
+			return 'placeholder' in i;
+	})();
+
+	// Hide labels by default if placeholders are supported
+	if($.support.placeholder) {
+			$('.form-label').each(function(){
+					$(this).addClass('js-hide-label');
+			});
+
+			// Code for adding/removing classes here
+			$('.form-group').find('input, textarea').on('keyup blur focus', function(e){
+
+					// Cache our selectors
+					var $this = $(this),
+							$parent = $this.parent().find("label");
+
+					switch(e.type) {
+						case 'keyup': {
+							 $parent.toggleClass('js-hide-label', $this.val() == '');
+						} break;
+						case 'blur': {
+							if( $this.val() == '' ) {
+									$parent.addClass('js-hide-label');
+							} else {
+									$parent.removeClass('js-hide-label').addClass('js-unhighlight-label');
+							}
+						} break;
+						case 'focus': {
+							if( $this.val() !== '' ) {
+									$parent.removeClass('js-unhighlight-label');
+							}
+						} break;
+						default: break;
+					}
+			});
+	}
+});
+</script>
+<footer class="site-footer">
+<div class="container">
+  <div class="social-icons">
+<ul>
+<li><a href="https://twitter.com/maryantar_"><i class="fab fa-twitter-square"></i></a></li>
+<li><a href="https://github.com/mariamantar"><i class="fab fa-github-square"></i></a></li>
+<li><a href="https://au.linkedin.com/in/mariamantar"><i class="fab fa-linkedin"></i></a></li>
+<li><a href="https://www.reddit.com/user/maryhantar/"><i class="fab fa-reddit-square"></i></a></li>
+</ul>
+</div>
+<div class= "bottom-footer"> © Copyright 2018 Mariam Antar
+</div>
+</div>
+</footer>
+</body>
+</html>
